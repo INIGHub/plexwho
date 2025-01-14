@@ -154,6 +154,8 @@ esac
 #
 # Contact Tautulli through the API and get the stream activity
 #
+# If Tautulli is subdomain rather than a subdirectory (ie: tautulli.DOMAIN.COM and not DOMAIN.COM/tautulli 
+#PLEXSTATS="$(curl -s "$TAUTIP:$TAUTPORT/api/v2?apikey=$TAUTAPI&cmd=get_activity")"
 PLEXSTATS="$(curl -s "$TAUTIP:$TAUTPORT/tautulli/api/v2?apikey=$TAUTAPI&cmd=get_activity")"
 
 #
